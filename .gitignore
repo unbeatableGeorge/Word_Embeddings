@@ -1,12 +1,19 @@
-# 先忽略一切（文件 & 目录）
+# 默认忽略所有文件 & 文件夹
 *
 
-# 放行所有目录（仅为了能继续匹配到子文件）
+# 允许目录结构（否则没法递归找到子目录下的 .ipynb）
 !*/
 
-# 仅跟踪 .ipynb
+# 只允许 Jupyter Notebook
 !*.ipynb
 
-# 也保留这两个常见文件（可选）
+# 允许这两个常见文件
 !.gitignore
 !README.md
+
+# 强制忽略这些目录
+.idea/
+.vscode/
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
