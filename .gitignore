@@ -1,11 +1,12 @@
-# 忽略所有文件
+# 先忽略一切（文件 & 目录）
 *
 
-# 允许 Jupyter Notebook
+# 放行所有目录（仅为了能继续匹配到子文件）
+!*/
+
+# 仅跟踪 .ipynb
 !*.ipynb
 
-# 允许 .gitignore 自身
+# 也保留这两个常见文件（可选）
 !.gitignore
-
-# （可选）允许 README
 !README.md
