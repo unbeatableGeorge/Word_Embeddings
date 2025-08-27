@@ -1,0 +1,11 @@
+# 忽略所有文件
+*
+
+# 允许 Jupyter Notebook
+!*.ipynb
+
+# 允许 .gitignore 自身
+!.gitignore
+
+# （可选）允许 README
+!README.md
